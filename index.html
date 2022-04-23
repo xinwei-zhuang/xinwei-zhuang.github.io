@@ -61,7 +61,7 @@ html {
 }
 
 body {
-  background-color:  RGB(241,242,238);
+  background-color:  RGB(250,250,250);
   color: #303060;
   font-family: 'Courier New', monospace;
 box-sizing: border-box;
@@ -89,6 +89,10 @@ figure {
 }
 * {
   box-sizing: border-box;
+}
+section{
+    margin:-1%;
+    padding:20px;
 }
 .column {
   float: left;
@@ -135,7 +139,7 @@ figure {
   top: 50;
   left: 0;
 
-  background-color: RGB(241,242,238);
+  background-color: RGB(250,250,250);
   overflow-x: hidden;
   margin-top: 100px;
   transition: 0.5s;
@@ -208,6 +212,35 @@ figure {
     padding: 5px;    
     text-align: center;
 }
+/* First the Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Picture Frame */
+.gallery-frame {
+  padding: .5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: ##336699;
+}
+
+/* The Images */
+.gallery-img {
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+  opacity: .7;
+}
 
 }
 </style>
@@ -217,10 +250,12 @@ figure {
 <div id="mySidebar" class="sidenav">
   <div class="vl"></div>
   <br><br><br>
+  <atopic><a class= 'second' href="index.html" >Home<span>&#8729;</span></a></atopic>
   <atopic><a class= 'second' href="#cv" >Architecture<span>&#8729;</span></a></atopic>
+    <atopic><a class= 'second' href="#cv" >Structure<span>&#8729;</span></a></atopic>
   <atopic><a class= 'second' href="#part2" >Computing<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="#part3" >Others<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="#part3" >Profile<span>&#8729;</span></a></atopic>
+  <atopic><a class= 'second' href="#part3" >Misc<span>&#8729;</span></a></atopic>
+  <atopic><a class= 'second' href="profile.html" >Profile<span>&#8729;</span></a></atopic>
 
 </div>
 
@@ -229,18 +264,36 @@ figure {
 
 <p style="font-size:15px;">PhD student in Building Science <br> UC Berkeley</p>
 <p style="font-size:15px;"></p>
-<hr>
 
-<h2 id="part1">Profile</h2>
-Xinwei Zhuang is a PhD student in the Building Science Program at UC Berkeley. She received her BS in Civil Engineering from Edinburgh Napier University, and her MS in Architectural Computation from Bartlett School of Architecture. At UC Berkeley, her doctoral research interests mainly focus on data driven design and machine learning aided design and optimization, taking environments and energy consumption into consideration. She is also interested in structural design and optimization.
+<div class="gallery-grid">
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/CFD.png">
+    <figcaption>Urban CFD</figcaption>
+  </figure>
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/sketchGAN.png">
+    <figcaption>sketchGAN</figcaption>
+  </figure>
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/gen3D.png">
+    <figcaption>gen3D</figcaption>
+  </figure>
+    <figure class="gallery-frame">
+    <img class="gallery-img" src="image/kinetic2.png">
+    <figcaption>kinetic</figcaption>
+  </figure>
+   </figure>
+    <figure class="gallery-frame">
+    <img class="gallery-img" src="image/spectral.png">
+    <figcaption>spectral</figcaption>
+  </figure>
+   </figure>
+    <figure class="gallery-frame">
+    <img class="gallery-img" src="image/genetic.png">
+    <figcaption>genetic</figcaption>
+  </figure>
 
-Before coming to CBE, Xinwei worked as both a researcher and an architect in Shanghai, China. Focusing on data driven design, she synthesized energy consumption data generated from buildings, and used artificial neural networks along with other algorithms to aid the design process and to optimize building performance.<br>
-
-<figure>
-  <p><img src="image/xinwei_zhuang.png", width="80%">
-</figure>
-
-
+</div>
 
 
 
