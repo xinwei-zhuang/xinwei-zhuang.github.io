@@ -61,7 +61,6 @@ html {
 }
 
 body {
-  background-color:  RGB(250,250,250);
   color: #303060;
   font-family: 'Courier New', monospace;
 box-sizing: border-box;
@@ -73,6 +72,7 @@ p.big {
   line-height: 1.5;
 }
 figcaption {
+
   text-align: center;
 }
 figure {
@@ -139,7 +139,6 @@ section{
   top: 50;
   left: 0;
 
-  background-color: RGB(250,250,250);
   overflow-x: hidden;
   margin-top: 100px;
   transition: 0.5s;
@@ -225,7 +224,7 @@ section{
 /* The Picture Frame */
 .gallery-frame {
   padding: .5rem;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   text-align: center;
   color: ##336699;
 }
@@ -235,11 +234,13 @@ section{
   max-width: 200px;
   height: auto;
   object-fit: cover;
+  -webkit-filter: saturate(0%);
   transition: opacity 0.25s ease-in-out;
 }
 
 .gallery-img:hover {
-  opacity: .7;
+  transition: 0.3s;
+  filter: none;
 }
 
 }
@@ -251,47 +252,98 @@ section{
   <div class="vl"></div>
   <br><br><br>
   <atopic><a class= 'second' href="index.html" >Home<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="#cv" >Architecture<span>&#8729;</span></a></atopic>
-    <atopic><a class= 'second' href="#cv" >Structure<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="#part2" >Computing<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="#part3" >Misc<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="profile.html" >Profile<span>&#8729;</span></a></atopic>
+  <atopic><a class= 'second' href="#computation" >Computation<span>&#8729;</span></a></atopic>
+  <atopic><a class= 'second' href="#misc" >Misc<span>&#8729;</span></a></atopic>
+  <atopic><a class= 'second' href="profile.html" >CV<span>&#8729;</span></a></atopic>
 
 </div>
 
 <div class="main">
-<h1>Xinwei Zhuang</h1>
+  <head>
 
-<p style="font-size:15px;">PhD student in Building Science <br> UC Berkeley</p>
-<p style="font-size:15px;"></p>
+  <title>Xinwei Zhuang | PhD student in Architecture | </title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
+  <link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<div id="doc2" class="yui-t7">
+  <div id="inner">
+  
+    <div id="hd">
+      <div class="yui-gc">
+        <div class="yui-u first">
+          <h1 id="computation">Selected Research</h1>
+        </div>
+        <div class="yui-u">
+          <div class="contact-info">
+            <!--<h3><a id="pdf" href="#" target="_blank">Download CV</a></h3>-->
+            <h3>Xinwei ZHUANG</h3>
+            <h3>xinwei_zhuang[at]berkeley.edu</h3>
+            <h3>390 Wurster Hall</h3>
+            <h3>Berkeley, CA, USA</h3>
+          </div><!--// .contact-info -->
+        </div>
+      </div><!--// .yui-gc -->
+    </div><!--// hd -->
+
+
+           <div class="yui-gf last">
+            <div class="yui-u">
+              <h2><b>Data driven design</b></i></h2>
+              Projects and researches in the interdisciplinary discipline between architecture and computer science, focusing on machine learning, generative modelling. 
+            </div>
+          </div><!--// .yui-gf -->
 
 <div class="gallery-grid">
   <figure class="gallery-frame">
-    <img class="gallery-img" src="image/CFD.png">
-    <figcaption>Urban CFD</figcaption>
+    <img class="gallery-img" src="image/cfd.png">
+    <figcaption>Urban CFD<br><small>Prediction of Ventilation Performance in Urban Area with CFD Simulation and Conditional Generative Adversarial Networks</small></figcaption>
   </figure>
+
   <figure class="gallery-frame">
     <img class="gallery-img" src="image/sketchGAN.png">
-    <figcaption>sketchGAN</figcaption>
+    <figcaption>SketchGAN<br><small>Interactive rendering generation from sketches using conditional generative adversarial neural network</small></figcaption>
   </figure>
   <figure class="gallery-frame">
     <img class="gallery-img" src="image/gen3D.png">
-    <figcaption>gen3D</figcaption>
+    <figcaption>Gen3D <br><small>Synthesis and Generation for 3D Architecture Volume with Generative Modeling</small></figcaption>
   </figure>
-    <figure class="gallery-frame">
-    <img class="gallery-img" src="image/kinetic2.png">
-    <figcaption>kinetic</figcaption>
-  </figure>
-   </figure>
-    <figure class="gallery-frame">
+      <figure class="gallery-frame">
     <img class="gallery-img" src="image/spectral.png">
-    <figcaption>spectral</figcaption>
+    <figcaption>Hierarchical evolution <br><small>Efficient space frame optimisation with hierarchical evolution and spectral Clustering</small></figcaption>
   </figure>
-   </figure>
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/genetic2.png">
+    <figcaption>Acoustic optimisation<br><small>Concert hall volume generation using genetic algorithm to optimize the acoustic performance.</small></figcaption>
+  </figure>
+
+</div>
+
+           <div class="yui-top"></div>
+            <div class="yui-gf last">
+            <div class="yui-u">
+              <h2 id="misc"><b>Misc</b></i></h2>
+              Experimental studies with robotic fabrication, smart material, and so on.
+            </div>
+          </div><!--// .yui-gf -->
+
+<div class="gallery-grid">
     <figure class="gallery-frame">
-    <img class="gallery-img" src="image/genetic.png">
-    <figcaption>genetic</figcaption>
+    <img class="gallery-img" src="image/kinetic.jpg">
+    <figcaption>Kinetic facade module<br><small>Passive activated kinetic facade enabled by memory alloy.</small></figcaption>
   </figure>
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/wood.jpg">
+    <figcaption>Robotic assembly<br><small>Two-meter tall parametric timber structure assembled by robotic arm in 15 minutes.</small></figcaption>
+  </figure>
+    
 
 </div>
 
