@@ -48,7 +48,7 @@ ul.publication {margin-left:0px;
 p.enlarge { font-size: 144%; padding-right: 6.5em; line-height: 24px; }
 p.enlarge span { color: #000 }
 .contact-info { margin-top: 7px; }
-.first h2 { font-style: italic; }
+.first h2 { font-style: italic; font-size: 120% }
 .last { border-bottom: 0 }
 
 
@@ -59,7 +59,10 @@ a#pdf:hover { background: #222; }
 
 .job { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .job h4 { position: absolute; top: 0.35em; right: 0 }
+.job h2 {  font-size: 120%}
+.job h3, h4 { font-size: 110%; }
 .job p { margin: 0.75em 0 3em 0; }
+.yui-u h2 {  font-size: 120%}
 
 .last { border: none; }
 .skills-list {  }

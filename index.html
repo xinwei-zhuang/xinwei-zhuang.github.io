@@ -1,11 +1,14 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
 <head>
 <title>Page Title</title>
 
+<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+<link rel="stylesheet" type="text/css" href="reset_font_grid.css" >
+
 <script src="/js/mathjax/tex-chtml.js" id="MathJax-script" async></script>
 <script type="text/javascript" src="LaTeXMathML.js">
-  <script defer src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script defer src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </script>
 <script>
 MathJax = {
@@ -41,7 +44,7 @@ function closeNav() {
 
 <style>
 code {
-  font-family: Consolas,"courier new";
+  font-family: Georgia;
   color: #336699;
   padding: 2px;
   font-size: 80%;
@@ -61,8 +64,9 @@ html {
 }
 
 body {
+  background-color:  #fff;
   color: #303060;
-  font-family: 'Courier New', monospace;
+  font-family: 'Georgia', monospace;
 box-sizing: border-box;
   width: 100%; 
   padding: 20px;   
@@ -224,13 +228,14 @@ section{
 /* The Picture Frame */
 .gallery-frame {
   padding: .5rem;
-  font-size: 1.0rem;
+  font-size: 120%;
   text-align: center;
   color: ##336699;
 }
 
 /* The Images */
 .gallery-img {
+  padding-bottom: 10px;
   max-width: 200px;
   height: auto;
   object-fit: cover;
@@ -241,29 +246,24 @@ section{
 .gallery-img:hover {
   transition: 0.3s;
   filter: none;
+  cursor: pointer;
 }
 
 }
 </style>
 
-<!-- // inner 
-  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" media="all" /> 
-  <link rel="stylesheet" type="text/css" href="resume.css" media="all" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
--->
 
-  <link rel="stylesheet" type="text/css" href="font_awesome.css" media="all" /> 
-  <link rel="stylesheet" type="text/css" href="resume.css" media="all" />
-  <link rel="stylesheet" type="text/css" href="reset_font_grid.css" media="all">
 </head>
+
+
 <body>
 <div id="mySidebar" class="sidenav">
   <div class="vl"></div>
   <br><br><br>
-  <atopic><a class= 'second' href="index.html" >Home<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="#computation" >Computation<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="#misc" >Misc<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="profile.html" >CV<span>&#8729;</span></a></atopic>
+  <atopic><a class= 'second' href="index.html" >Research<span>&#8729;</span></a></atopic>
+<!--  <atopic><a class= 'second' href="#computation" >Computation<span>&#8729;</span></a></atopic>
+  <atopic><a class= 'second' href="#misc" >Misc<span>&#8729;</span></a></atopic>-->
+  <atopic><a class= 'second' href="profile.html" >Profile<span>&#8729;</span></a></atopic>
 
 </div>
 
@@ -279,11 +279,11 @@ section{
 
 <div id="doc2" class="yui-t7">
   <div id="inner">
-  
     <div id="hd">
       <div class="yui-gc">
         <div class="yui-u first">
           <h1 id="computation">Selected Research</h1>
+          <h3><i>(Page under construction) </i></h3>
         </div>
         <div class="yui-u">
           <div class="contact-info">
@@ -298,12 +298,13 @@ section{
     </div><!--// hd -->
 
 
-           <div class="yui-gf last">
-            <div class="yui-u">
-              <h2><b>Data driven design</b></i></h2>
-              Projects and researches in the interdisciplinary discipline between architecture and computer science, focusing on machine learning, generative modelling. 
-            </div>
-          </div><!--// .yui-gf -->
+     <div class="yui-gf last">
+      <div class="yui-u">
+        <h2 style="font-size:120%"><b>Data driven design</b></h2>
+        Projects and researches in the interdisciplinary discipline between architecture and computer science, focusing on machine learning, generative modelling. 
+      </div>
+    </div><!--// .yui-gf -->
+
 
 <div class="gallery-grid">
   <figure class="gallery-frame">
@@ -334,15 +335,27 @@ section{
             <div class="yui-gf last">
             <div class="yui-u">
               <h2 id="misc"><b>Misc</b></i></h2>
-              Experimental studies with robotic fabrication, smart material, and so on.
+              Experimental studies with mixed reality, robotic fabrication, smart material, and so on.
             </div>
           </div><!--// .yui-gf -->
 
 <div class="gallery-grid">
     <figure class="gallery-frame">
+    <img class="gallery-img" src="image/image for AR info.jpg">
+    <figcaption>Whitechapel remembers<br><small>Augmented experience for city exploration in whitechapel, London</small></figcaption>
+  </figure>
+
+      <figure class="gallery-frame">
+    <img class="gallery-img" src="image/vr.jpg">
+    <figcaption>VR prototyping<br><small>Instant prototyping for BART (underground ticket machine in bay area) in virtual reality</small></figcaption>
+    
+  </figure>
+
+    <figure class="gallery-frame">
     <img class="gallery-img" src="image/kinetic.jpg">
     <figcaption>Kinetic facade module<br><small>Passive activated kinetic facade enabled by memory alloy.</small></figcaption>
   </figure>
+
   <figure class="gallery-frame">
     <img class="gallery-img" src="image/wood.jpg">
     <figcaption>Robotic assembly<br><small>Two-meter tall parametric timber structure assembled by robotic arm in 15 minutes.</small></figcaption>
