@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>Xinwei Zhuang | Research</title>
+
+<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+<link rel="stylesheet" type="text/css" href="reset_font_grid.css" >
+
+<script src="/js/mathjax/tex-chtml.js" id="MathJax-script" async></script>
+<script type="text/javascript" src="LaTeXMathML.js"></script>
+<script defer src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+(function () {
+  var script = document.createElement('script');
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+  script.async = true;
+  document.head.appendChild(script);
+})();
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<style>
+code {
+  font-family: Georgia;
+  color: #336699;
+  padding: 2px;
+  font-size: 80%;
+  line-height: 1.5;
+}
+.MathJax {
+font-size: 1.2em;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+html {
+    margin:    0 auto;
+    max-width: 1200px;
+}
+
+body {
+  background-color:  #fff;
+  color: #303060;
+  font-family: 'Georgia', monospace;
+box-sizing: border-box;
+  width: 100%; 
+  padding: 20px;   
+  margin: auto;
+}
+p.big {
+  line-height: 1.5;
+}
+figcaption {
+
+  text-align: center;
+}
+figure {
+    display: inline-block;
+    margin: 0 1em 1em 0;
+    vertical-align: middle;
+    max-height: 100%;  
+    max-width: 100%; 
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+* {
+  box-sizing: border-box;
+}
+section{
+    margin:-1%;
+    padding:20px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.main {
+  vertical-align: middle;
+  margin-left: 250px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  position: relative;
+}
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  float: middle;
+  width: 80%;
+  padding: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  left: 0;
+
+  overflow-x: hidden;
+  margin-top: 100px;
+  transition: 0.5s;
+
+}
+
+.sidenav a.first {
+  padding: 6px 8px 6px 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #303060;
+  display: block;
+  text-align: right;
+}
+
+.sidenav a.second {
+  padding: 6px 8px 6px 70px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #303060;
+  display: block;
+  text-align: right;
+}
+
+.sidenav a.first:hover {
+  font-size: 25px;
+  font-weight: bold;
+}
+.sidenav a.second:hover {
+  font-size: 17px;
+  font-weight: bold;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.vl {
+  border-left: 5px;
+  height: 400px;
+  width : 1px;
+  position: absolute;
+  left: 248px;
+  top:  0 px;
+  background-image: linear-gradient( transparent, #303060, transparent);
+}
+.matrix {
+    position: relative;
+}
+
+.matrix:before, .matrix:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 1px solid #f1f1f1;
+    width: 6px;
+    height: 100%;
+}
+.matrix:before {
+    left: -6px;
+    border-right: 0px;
+}
+.matrix:after {
+    right: -6px;
+    border-left: 0px;
+}
+.matrix td {
+    padding: 5px;    
+    text-align: center;
+}
+/* First the Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* The Picture Frame */
+.gallery-frame {
+  padding: .5rem;
+  font-size: 120%;
+  text-align: center;
+  color: #336699;
+}
+
+/* The Images */
+.gallery-img {
+  padding-bottom: 10px;
+  max-width: 200px;
+  height: auto;
+  object-fit: cover;
+  -webkit-filter: saturate(0%);
+  transition: opacity 0.25s ease-in-out;
+}
+
+.gallery-img:hover {
+  transition: 0.3s;
+  filter: none;
+  cursor: pointer;
+}
+
+
+</style>
+
+
+</head>
+
+
+<body>
+<div id="mySidebar" class="sidenav">
+  <div class="vl"></div>
+  <br><br><br>
+  <atopic><a class= 'second' href="index.html" >Profile<span>&#8729;</span></a></atopic>
+  <atopic><a class= 'second' href="research.html" >Research<span>&#8729;</span></a></atopic>
+
+</div>
+
+<div class="main">
+
+  <title>Xinwei Zhuang | PhD student in Architecture | </title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+
+
+<div id="doc2" class="yui-t7">
+  <div id="inner">
+    <div id="hd">
+      <div class="yui-gc">
+        <div class="yui-u first">
+          <h1 id="computation">Selected Research</h1>
+          <h3><i>(Page under construction) </i></h3>
+        </div>
+        <div class="yui-u">
+          <div class="contact-info">
+            <!--<h3><a id="pdf" href="#" target="_blank">Download CV</a></h3>-->
+            <h3>Xinwei ZHUANG</h3>
+            <h3>xinwei_zhuang[at]berkeley.edu</h3>
+            <h3>390 Wurster Hall</h3>
+            <h3>Berkeley, CA 94720, USA</h3>
+          </div><!--// .contact-info -->
+        </div>
+      </div><!--// .yui-gc -->
+    </div><!--// hd -->
+
+
+     <div class="yui-gf last">
+      <div class="yui-u">
+        <h2 style="font-size:120%"><b>Data driven design</b></h2>
+        Projects and researches in the interdisciplinary discipline between architecture and computer science, focusing on machine learning, generative modelling. 
+      </div>
+    </div><!--// .yui-gf -->
+
+
+<div class="gallery-grid">
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/CFD.png">
+    <figcaption>Urban CFD<br><small>Prediction of Ventilation Performance in Urban Area with CFD Simulation and Conditional Generative Adversarial Networks</small></figcaption>
+  </figure>
+
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/sketchGAN.png">
+    <figcaption>SketchGAN<br><small>Interactive rendering generation from sketches using conditional generative adversarial neural network</small></figcaption>
+  </figure>
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/gen3D.png">
+    <figcaption>Gen3D <br><small>Synthesis and Generation for 3D Architecture Volume with Generative Modeling</small></figcaption>
+  </figure>
+      <figure class="gallery-frame">
+    <img class="gallery-img" src="image/spectral.png">
+    <figcaption>Hierarchical evolution <br><small>Efficient space frame optimisation with hierarchical evolution and spectral Clustering</small></figcaption>
+  </figure>
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/genetic2.png">
+    <figcaption>Acoustic optimisation<br><small>Concert hall volume generation using genetic algorithm to optimize the acoustic performance.</small></figcaption>
+  </figure>
+
+</div>
+
+
+
+           <div class="yui-top"></div>
+            <div class="yui-gf last">
+            <div class="yui-u">
+              <h2 id="misc"><b>Misc</b></i></h2>
+              Experimental studies with mixed reality, robotic fabrication, smart material, and so on.
+            </div>
+          </div><!--// .yui-gf -->
+
+<div class="gallery-grid">
+    <figure class="gallery-frame">
+    <img class="gallery-img" src="image/image for AR info.jpg">
+    <figcaption>Whitechapel remembers<br><small>Augmented experience for city exploration in whitechapel, London</small></figcaption>
+  </figure>
+
+      <figure class="gallery-frame">
+        <a href="https://www.behance.net/gallery/109320481/Testing-Product-Prototypes-in-VR" target="_blank">
+    <img class="gallery-img" src="image/vr.jpg"></a>
+    <figcaption>VR prototyping<br><small>Instant prototyping for BART (underground ticket machine in bay area) in virtual reality</small></figcaption>
+    
+  </figure>
+
+    <figure class="gallery-frame">
+    <img class="gallery-img" src="image/kinetic.jpg">
+    <figcaption>Kinetic facade module<br><small>Passive activated kinetic facade enabled by memory alloy.</small></figcaption>
+  </figure>
+
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/wood.jpg">
+    <figcaption>Robotic assembly<br><small>Two-meter tall parametric timber structure assembled by robotic arm in 15 minutes.</small></figcaption>
+  </figure>
+    
+
+</div>
+
+
+           <div class="yui-top"></div>
+            <div class="yui-gf last">
+            <div class="yui-u">
+              <h2 id="misc"><b>Computer vision</b></i></h2>
+              Project from CS294-026 Introduction to computer vision and computational photography
+            </div>
+          </div><!--// .yui-gf -->
+
+<div class="gallery-grid">
+    <figure class="gallery-frame">
+    <img class="gallery-img" src="image/294026_1.jpg">
+    <figcaption>Colorization<br><small>Colorizing the Prokudin-Gorskii's glass plate</small></figcaption>
+  </figure>
+
+      <figure class="gallery-frame">
+    <img class="gallery-img" src="image/294026_2.jpg"></a>
+    <figcaption>Filters and Frequencies<br><small>Finite Difference Operator, Multi-resolution Blending with Gaussian and Laplacian Stacks</small></figcaption>
+    
+  </figure>
+
+    <figure class="gallery-frame">
+    <img class="gallery-img" src="image/294026_3.png">
+    <figcaption>Face Morphing<br><small>Face morph with averaging and extrapolating </small></figcaption>
+  </figure>
+
+  <figure class="gallery-frame">
+    <img class="gallery-img" src="image/294026_4.png">
+    <figcaption>Stitching Photo Mosaics<br><small>Image warp with homographies, feature descriptor and Robust image mosaic with RANSAC</small></figcaption>
+  </figure>
+  
+    <figure class="gallery-frame">
+    <img class="gallery-img" src="image/294026_5.png">
+    <figcaption>Facial Keypoint Detection<br><small>Using neural network to predict facial keypoint and heat map regression</small></figcaption>
+  </figure>
+
+</div>
+
+
+           <div class="yui-top"></div>
+            <div class="yui-gf last">
+            <div class="yui-u">
+              <h2 id="misc"><b>Computer graphics</b></i></h2>
+              Project from CS284 Introduction to computer graphics
+            </div>
+          </div><!--// .yui-gf -->
+
+<div class="gallery-grid">
+    <figure class="gallery-frame">
+    <a href="https://cal-cs184-student.github.io/sp22-project-webpages-xinwei-zhuang/proj1/index.html" target="_blank">
+      <img class="gallery-img" src="image/284_1.png"></a>
+    <figcaption>Rasterizer<br><small>"Level sampling" with mipmaps for texture mapping</small></figcaption>
+  </figure>
+
+      <figure class="gallery-frame">
+        <a href="https://cal-cs184-student.github.io/sp22-project-webpages-xinwei-zhuang/proj2/index.html" target="_blank">
+    <img class="gallery-img" src="image/284_2.png"></a>
+    <figcaption>Mesh editor<br><small>Loop subdivision for mesh upsampling</small></figcaption>
+    
+  </figure>
+
+    <figure class="gallery-frame">
+      <a href="https://cal-cs184-student.github.io/sp22-project-webpages-xinwei-zhuang/proj3-1/index.html" target="_blank">
+    <img class="gallery-img" src="image/284_3_bvh.png"></a>
+    <figcaption>PathTracer<br><small>Rendering with direct and global illumanation with Bounding Volume Hierarchy</small></figcaption>
+  </figure>
+
+  <figure class="gallery-frame">
+    <a href="https://cal-cs184-student.github.io/sp22-project-webpages-xinwei-zhuang/proj3-2/index.html" target="_blank">
+    <img class="gallery-img" src="image/284_3_2.png"></a>
+    <figcaption>Advanced path tracer<br><small>Render mirror and glass materials.</small></figcaption>
+  </figure>
+  
+    <figure class="gallery-frame">
+      <a href="https://cal-cs184-student.github.io/sp22-project-webpages-xinwei-zhuang/proj4/index.html" target="_blank">
+    <img class="gallery-img" src="image/284_4.png"></a>
+    <figcaption>Cloth simulation<br><small>Simulate cloth with spring system and numerical integration</small></figcaption>
+  </figure>
+
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
