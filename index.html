@@ -1,845 +1,292 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-
-<head>
-  <title>Xinwei Zhuang | Profile</title>
-
-  <link rel="stylesheet" type="text/css" href="resume.css" media="all" />
-  <link rel="stylesheet" type="text/css" href="reset_font_grid.css">
-
-  <script src="/js/mathjax/tex-chtml.js" id="MathJax-script" async></script>
-  <script type="text/javascript" src="LaTeXMathML.js"></script>
-  <script defer src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  </script>
-<script>
-  let marta = "Professor Marta Gonzalez, ";
-  let martalength = marta.length;
-  let width = martalength * 10;
-  
-  // Set the width of the 'spacer' element
-  document.getElementById("spacer").style.width = width + 'px';
-  </script>
-
-
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      },
-      svg: {
-        fontCache: 'global'
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-      script.async = true;
-      document.head.appendChild(script);
-    })();
-  </script>
-  <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-  </script>
-
-  <script>
-    function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-    }
-  </script>
-
-  <style>
-    table.ex1 {
-      empty-cells: hide;
-    }
-
-    td {
-      line-height: 180%;
-      vertical-align: top;
-    }
-
-
-    code {
-      font-family: Georgia;
-      color: #336699;
-      padding: 2px;
-      font-size: 80%;
-      line-height: 1.5;
-    }
-
-    .MathJax {
-      font-size: 1.2em;
-    }
-
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    html {
-      margin: 0 auto;
-      max-width: 1200px;
-    }
-
-    body {
-      background-color: #fff;
-      color: #303060;
-      font-family: 'Georgia', monospace;
-      box-sizing: border-box;
-      width: 100%;
-      padding: 20px;
-      margin: auto;
-    }
-
-    p.big {
-      line-height: 1.5;
-    }
-
-    figcaption {
-      text-align: center;
-    }
-
-    figure {
-      display: inline-block;
-      margin: 0 1em 1em 0;
-      vertical-align: middle;
-      max-height: 100%;
-      max-width: 100%;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-
-    /* Clearfix (clear floats) */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    .main {
-      vertical-align: middle;
-      margin-left: 250px;
-      /* Same as the width of the sidenav */
-      padding: 0px 10px;
-    }
-
-    /* Clearfix (clear floats) */
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-      position: relative;
-    }
-
-    .img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .box {
-      float: middle;
-      width: 80%;
-      padding: 20px;
-    }
-
-    .sidenav {
-      height: 100%;
-      width: 250px;
-      position: fixed;
-      z-index: 1;
-      top: 50;
-      left: 0;
-
-      background-color: #fff;
-      overflow-x: hidden;
-      margin-top: 100px;
-      transition: 0.5s;
-
-    }
-
-    .sidenav a.first {
-      padding: 6px 8px 6px 10px;
-      text-decoration: none;
-      font-size: 20px;
-      color: #fff;
-      display: block;
-      text-align: right;
-    }
-
-    .sidenav a.second {
-      padding: 6px 8px 6px 70px;
-      text-decoration: none;
-      font-size: 15px;
-      color: #303060;
-      display: block;
-      text-align: right;
-    }
-
-    .sidenav a.first:hover {
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    .sidenav a.second:hover {
-      font-size: 17px;
-      font-weight: bold;
-    }
-
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-
-    .vl {
-      border-left: 5px;
-      height: 400px;
-      width: 1px;
-      position: absolute;
-      left: 248px;
-      top: 0 px;
-      background-image: linear-gradient(transparent, #303060, transparent);
-    }
-
-    .matrix {
-      position: relative;
-    }
-
-    .matrix:before,
-    .matrix:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      border: 1px solid #f1f1f1;
-      width: 6px;
-      height: 100%;
-    }
-
-    .matrix:before {
-      left: -6px;
-      border-right: 0px;
-    }
-
-    .matrix:after {
-      right: -6px;
-      border-left: 0px;
-    }
-
-    .matrix td {
-      padding: 5px;
-      text-align: center;
-    }
-
-    .first-column {
-      width: 15%;
-      padding: 0 10px 0 0;
-      float: left;
-    }
-
-    .second-column {
-      width: 85%;
-      padding: 0 10px 0 0;
-      float: right;
-    }
-  </style>
-
-  <title>Xinwei Zhuang | PhD candidate in Architecture | </title>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-
-
-</head>
-
-<body>
-  <div id="mySidebar" class="sidenav">
-    <div class="vl"></div>
-    <br><br><br>
-    <atopic><a class='second' href="index.html">Profile<span>&#8729;</span></a></atopic>
-    <atopic><a class='second' href="research.html">Research<span>&#8729;</span></a></atopic>
-    <!--  <atopic><a class= 'second' href="#computation" >Computation<span>&#8729;</span></a></atopic>
-  <atopic><a class= 'second' href="#misc" >Misc<span>&#8729;</span></a></atopic>-->
-
-
-  </div>
-
-  <div class="main">
-
-    <body>
-
-      <div id="doc2" class="yui-t7">
-        <div id="inner">
-          <div id="hd">
-            <div class="yui-gc">
-              <div class="yui-u first">
-                <h1>Xinwei ZH<span class="red">U</span>ANG</h1>
-                <h2>Ph.D. candidate in Architecture, UC Berkeley</h2>
-              </div>
-
-              <div class="yui-u">
-                <div class="contact-info">
-                  <!--<h3><a id="pdf" href="#" target="_blank">Download CV</a></h3>-->
-                  <h3>&emsp;</h3>
-                  <h3>xinwei_zhuang[at]berkeley.edu</h3>
-                  <h3>390 Wurster Hall</h3>
-                  <h3>Berkeley, CA 94720, USA</h3>
-                </div><!--// .contact-info -->
-              </div>
-            </div><!--// .yui-gc -->
-          </div><!--// hd -->
-
-          <div id="bd">
-            <div id="yui-main">
-              <div class="yui-b">
-
-                <div class="yui-gf">
-                  <div class="yui-u first">
-                    </figure>
-                    <img width=95% src="image/profile2.jpg">
-                    </figure>
-                  </div>
-                  <div class="yui-u">
-                    Hello. I am Xinwei (pronounced as "shin way", 庄新伟), a 4th year PhD candidate in Architecture. I am
-                    advised by <a href="https://vcresearch.berkeley.edu/faculty/luisa-caldas" target="_blank">Professor
-                      Luisa Caldas</a>, coadvised by <a href="https://vcresearch.berkeley.edu/faculty/simon-schleicher"
-                      target="_blank">Professor Simon Schleicher</a> in the Building Science, Technology and
-                    Sustainability program from the <a href="https://ced.berkeley.edu/people/xinwei-zhuang"
-                      target="_blank">College of Environmental Design (CED)</a> at UC Berkeley. I'm a member of <a
-                      href="https://xrlab.berkeley.edu/" target="_blank">XR lab</a> and <a
-                      href="https://cbe.berkeley.edu/">Center for the Built Environment (CBE)</a>, and President at <a
-                      href="https://callink.berkeley.edu/organization/xrlab-idsc" target="_blank">Immersive Design
-                      Student Club</a>. I worked as both a researcher and an architect, 
-                      and served as a research assistant at the division of <a href="https://buildings.lbl.gov/">Building Technology and Urban Systems</a>, Laurence Berkeley National Lab, 
-                       on simulation, data analysis and visualization for estimating the energy and 
-                      carbon impacts of various energy conservation measures. 
-                      <br>
-                      My doctoral research interests lie in machine learning-aided generative architecture and urban design,
-                    energy efficiency, sustainability, and mixed reality, aiming to weave together the realms of architecture 
-                    and urban design with energy resilience. 
-                    <br>
-                    
-                    
-
-                    <br>
-                    </figure>
-                    <img src="image/info.png" height=18 style="vertical-align:middle">
-                    </figure> &nbsp; Open oppurtunities: Seeking undergrad/graduate students for 
-                    <b>AI-aided generative design and energy performance evaluation</b>. Programming skills or energy
-                    simulation skills needed. Please email me with a CV if interested!
-                  </div>
-                </div><!--// .yui-gf -->
-
-
-                <div class="yui-gf">
-                  <div class="yui-u first">
-                    <h2>Education</h2>
-                  </div>
-                  <div class="yui-u">
-                    <h2>University of California, Berkeley, CA, USA <i> (in progress)</i></h2>
-                    <h4>2020 - present</h4>
-                    Ph.D. in Architecture, building science, technology and sustainability track<br>
-                    D.E. in New Media<br>
-                    GPA: 3.95/4.0<br>
-
-                    Advisor: <a href="https://vcresearch.berkeley.edu/faculty/luisa-caldas" target="_blank">Professor
-                      Luisa Caldas</a> <br>
-                    Committee: <a href="https://vcresearch.berkeley.edu/faculty/simon-schleicher"
-                    target="_blank">Professor Simon Schleicher</a>, Department of Architecture<br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <a href="https://vcresearch.berkeley.edu/faculty/luisa-caldas"
-                    target="_blank">Professor Luisa Caldas</a>, Department of Architecture<br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <a href="https://ced.berkeley.edu/people/marta-gonzalez"
-                    target="_blank">Professor Marta Gonzalez</a>, Department of City and Regional Planning<br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <a href="https://ced.berkeley.edu/people/daniel-rodriguez"
-                    target="_blank"> Professor Daniel Rodriguez</a>, Department of City and Regional Planning<br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <a href="https://eta.lbl.gov/people/tianzhen-hong"
-                    target="_blank">Dr. Tianzhen Hong</a>, Urban Systems Group at Lawrence Berkeley National Laboratory<br>
-                    Honors: Golden Gate Chapter Scholarship, 2021<br>
-                    &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; Eric T. Andresen Memorial Scholarship, 2023<br>
-                    <!-- &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; Professional Development Award, Graduate Assembly, 2023<br>
-                    &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; Conference Grant, Department of Architecture, 2022, 23<br>
-                    &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp; Conference Grant, Berkeley Center for New Media, 2023<br> -->
-                  </div>
-                  <div class="yui-u"><br></div>
-                  <div class="yui-u">
-                    <h2>Bartlett School of Architecture, University College London, UK</h2>
-                    2016 - 2017<br>
-                    MSc Hons in Architectural Computation (Distinction)<br>
-                    GPA: 70.5/100<br>
-
-                    Advisor: <a href="https://www.ucl.ac.uk/bartlett/architecture/people/prof-sean-hanna"
-                      target="_blank">Professor Sean Hanna</a> <br>
-                    Thesis: Space frame optimisation with spectral clustering algorithm<br>
-                    Honors: Alistair Turner Prize for best dissertation, 2017<br>
-                  </div>
-                  <div class="yui-u"><br></div>
-                  <div class="yui-u">
-                    <h2>Edinburgh Napier University, UK</h2>
-                    2012 - 2016<br>
-                    BSc Hons in Civil Engineering (First honor degree)<br>
-                    GPA: 79.7/100<br>
-                    Advisor: <a href="https://www.napier.ac.uk/people/john-mcdougall" target="_blank">Professor John
-                      McDougall</a> <br>
-                    Thesis: Influence of Particle Loss on Soil Behaviour<br>
-
-                    Honors: Edinburgh Napier Scholarship Winner for the first ranking student in GPA, 2016<br>
-                  </div>
-                  <div class="yui-u"><br></div>
-                  <div class="yui-u">
-                    <h2>Shanghai Normal University, China</h2>
-                    2012 - 2016<br>
-                    BSc in Civil Engineering<br>
-                    GPA: 3.69/4.0<br>
-                    Honors: Shanghai Distinct Graduate Award, 2016<br>
-                    &emsp;&emsp;&emsp;&emsp;National scholarship, 2012-2015<br>
-                    &emsp;&emsp;&emsp;&emsp;Excellent executive of News & Media Center, 2013<br>
-                  </div>
-                </div><!--// .yui-gf -->
-              </div><!--// .yui-b -->
-
-
-
-
-
-
-              <div class="yui-gf">
-
-                <div class="yui-u first">
-                  <h2>Teaching</h2>
-
-                  <font size="1">100-199: undergrad-level course
-                    <br> 200-299 : graduate-level course
-                  </font>
-                </div><!--// .yui-u -->
-                <table class="ex1" border="0">
-                  <colgroup>
-                    <col span="1" style="width: 15%;">
-                    <col span="1" style="width: 85%;">
-                  </colgroup>
-                  <tbody>
-                    <tr>
-                      <td>Spring 2023</td>
-                      <td><b>Arch 240</b> Advanced Study of Energy and Environment</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td><i>Graduate student instructor</i></td>
-                    </tr>
-                    <td>Spring 2023</td>
-                    <td><b>Arch 245</b> Daylighting in Architecture</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td><i>Teaching assistant</i></td>
-                    </tr>
-                    <tr>
-                      <td>Spring 2022</td>
-                      <td><b>Arch 140</b> Energy and Environment</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td><i>Graduate student instructor</i></td>
-                    </tr>
-                    <tr>
-                      <td>Fall 2021, 22</td>
-                      <td><b>Arch 150</b> Introduction to structures</td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td><i>Graduate student instructor & Reader</i></td>
-                    </tr>
-                    <tr>
-                      <td>Fall 2021</td>
-                      <td><b>Arch 249</b> Special Topics in the Physical Environment in Buildings, <a
-                          href="https://xrlab.berkeley.edu/xrlab-home/2-2/" target="_blank"> the Architecture of Light:
-                          An Analytical Journey</a></td>
-                    </tr>
-                    <tr>
-                      <td></td>
-                      <td><i>Teaching assistant</i></td>
-                    </tr>
-
-
-
-
-
-
-
-
-
-                    <!--       <tr>
-                <td>Fall 2023</td>
-                <td><b>Arch 260</b> Introduction to Construction, Graduate Level </td>
-                </tr>
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Xinwei Zhuang</title>
+
+    <meta name="author" content="Xinwei Zhuang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Xinwei Zhuang
+                  <p font-size: 14px style="text-align: center;">(pronounced as <i>Sheen-way Joann</i> , 庄新伟)</p>
+                </p>
+                <p>I am a 4th year PhD candidate in Architecture. I am honored to be 
+                  advised by <a href="https://vcresearch.berkeley.edu/faculty/luisa-caldas" target="_blank">Prof.
+                    Luisa Caldas</a>, coadvised by <a href="https://vcresearch.berkeley.edu/faculty/simon-schleicher"
+                    target="_blank">Prof. Simon Schleicher</a> in the Building Science, Technology and
+                  Sustainability program at UC Berkeley. I'm a member of <a
+                    href="https://xrlab.berkeley.edu/" target="_blank">XR lab</a> and <a
+                    href="https://cbe.berkeley.edu/">Center for the Built Environment (CBE)</a>, and President at <a
+                    href="https://callink.berkeley.edu/organization/xrlab-idsc" target="_blank">Immersive Design
+                    Student Club</a>. I worked as both a researcher and an architect, 
+                    and served as a research assistant at the division of 
+                    <a href="https://buildings.lbl.gov/">Building Technology and Urban Systems</a>, Lawrence Berkeley 
+                    National Lab, focusing on using <a href="https://www.energy.gov/eere/buildings/scout">Scout </a> 
+                    to estimate energy and carbon impact of energy conservation measurements.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:xinwei_zhuang@berkeley.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="files/Xinwei_Zhuang_CV.pdf" target="_blank">CV</a> &nbsp;/&nbsp;
+                  <a href="https://ced.berkeley.edu/people/xinwei-zhuang"
+                    target="_blank">Bio</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=Gc7-U6QAAAAJ&hl=en" 
+                  target="_blank">Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://www.linkedin.com/in/xinwei-zhuang-7568b112a/" 
+                  target="_blank">LinkedIn</a> 
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/xinwei.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 10%;" alt="profile photo" src="images/xinwei.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
-                <td></td>
-                <td><i>Graduate student instructor</i></td>
-              </tr> -->
-                  </tbody>
-                </table>
-              </div><!--// .yui-gf -->
-
-
-
-
-              <div class="yui-gf">
-
-                <div class="yui-u first">
-                  <h2>Experience</h2>
-                </div><!--// .yui-u -->
-
-                <div class="yui-u">
-                  <div class="job">
-                    <h2><a href="https://buildings.lbl.gov/" target="_blank">Lawrence Berkeley National Lab</a></h2>
-                    <h3>Graduate Student Research Assistant</h3>
-                    <h4>June 2023 - present</h4>
-                    <ul>
-                      <li>Simulation, data analysis and visualziation with <a href="https://www.energy.gov/eere/buildings/scout" target="_blank">SCOUT</a> for 
-                        estimating the energy and carbon impacts of various energy conservation measures (ECMs) </li>
-                      <li>Oakland dataset construction for <a href = "https://buildings.lbl.gov/urban-science/tools" target="_blank">CityBES</a></li>
-                      <li>Integrated Multisector Multiscale Modeling</li>
-                      <li>A multi-scale time-series dataset of anthropogenic heat and energy consumption 
-                        <a href = "https://buildings.lbl.gov/urban-science/tools" target="_blank">interactive map</a> in Los
-                        Angelos County</li>
-                    </ul>
-                    <br>
-                    <h5>May 2022 - Aug 2022</h5>
-                    <ul>
-                      <li>Case study on smart home management for resiliency</li>
-                      <li>Data analysis for Zero-energy house </li>
-                      <li>Performance analysis on zero net energy and zero net carbon evaluation matrix</li>
-                    </ul>
-                  </div>
-
-                  <div class="job">
-                    <h2><a href="http://www.roboticplus.ai/" target="_blank">Robotic plus</a></h2>
-                    <h3>Parametric Architect </h3>
-                    <h4>Mar 2020 - July 2020</h4>
-
-                    <ul>
-                      <li>Parametric architectural design</li>
-                      <li>Robotic construction plugin development for grasshopper</li>
-                      <li>Spatial printing algorithm development</li>
-                      <li>InverseCSG tree algorithm development</li>
-                    </ul>
-                  </div>
-
-                  <div class="job">
-                    <h2><a href="https://architecturestudio.fr/en/" target="_blank">Architecture Studio</a></h2>
-                    <h3>Architectural designer</h3>
-                    <h4>Aug 2018 - Mar 2020</h4>
-                    <ul>
-                      <li>Architectural design for conceptual and schematic phases</li>
-                      <li>Landscape design and urban planning</li>
-                    </ul>
-                  </div>
-
-
-                  <div class="job last">
-                    <h2><a href="https://english.cscec.com" target="_blank">China Shanghai Architectural Design &
-                        Research Inst.</a></h2>
-                    <h3>Research assistant</h3>
-                    <h4>Nov 2017 - Aug 2018</h4>
-                    <ul>
-                      <li>In charge with the 13th National 5-year Project: Energy Consumption Control and Opti-
-                        misation During Design Phase</li>
-                      <li>Using Artificial Neural Network to develop a real-time energy consumption evaluation for
-                        commercial complex in Northern China</li>
-                      <li>Aim to aid architect optimise energy consumption in the early design phase;</li>
-                      <li>Developed in Dynamo, Revit; seamlessly transit from design to energy evaluation;</li>
-                      <li>Obtained Chinese Novel Technology patent.</li>
-                    </ul>
-                  </div>
-
-                </div><!--// .yui-u -->
-              </div><!--// .yui-gf -->
-
-
-
-
-              <div class="yui-gf">
-
-                <div class="yui-u first">
-                  <h2>Publication</h2>
-                  <font size="1">
-                    * equal contribution
-                  </font>
-                </div><!--// .yui-u -->
-
-                <div class="yui-u">
-                  <div class="job last">
-                    <ul class="publication">
-
-                      <li><b>Zhuang X.*</b>, Huang Z.*, Zeng W. and Caldas L. (2023) MARL: Multi-scale Archetype 
-                        Representation Learning for Urban Building Energy Modeling, workshop on Computer Vision 
-                        Aided Architectural Design (CVAAD), at <i>International Conference on Computer Vision (ICCV)</i>, Paris, France
-                        [<a href="https://openaccess.thecvf.com/content/ICCV2023W/CVAAD/html/Zhuang_MARL_Multi-scale_Archetype_Representation_Learning_for_Urban_Building_Energy_Modeling_ICCVW_2023_paper.html" target="_blank">Paper</a>, 
-                        <a href="files/2023 ICCV poster.pdf" target="_blank">Poster</a>, 
-                        <a href="https://github.com/ZixunHuang1997/MARL-BuildingEnergyEstimation" target="_blank">Github</a>]
-                      </li>
-
-                      <li><b>Zhuang X.*</b>, Huang Z.*, Zeng W. and Caldas L. (2023) Encoding Urban Ecologies: Automated 
-                        Building Archetype Generation through Self-Supervised Learning for Energy Modeling, in 
-                        <i>2023 Conference on Association for Computer Aided Design in Architecture (ACADIA)</i>, Denver, United States of America
-                        [<a href="https://www.researchgate.net/publication/375183489_Encoding_Urban_Ecologies_Automated_Building_Archetype_Generation_through_Self-Supervised_Learning_for_Energy_Modeling" target="_blank">Paper</a>,
-                        <a href="https://youtu.be/cUzrrltZBcY?feature=shared" target="_blank">Video</a>]
-                      </li>
-
-                      <li><b>Zhuang X.</b>, Luo N., Hong, T. and Koenig M. (2023) What can we learn from Honda Smart
-                        Home with high-resolution monitored performance data: A zero-net energy home in California, in
-                        <i>the 18th International IPBSA Conference and Exhibition, Building Simulation 2023</i>,
-                        Shanghai, China
-                        [<a href="files/2023 BS Honda Smart Home.pdf" target="_blank">Slides</a>, 
-                        <a href="https://youtu.be/mPKj2BHwZag?feature=shared" target="_blank">Video</a>]
-                      </li>
-
-                      <li>Li F.* and <b>Zhuang X.*</b> (2023) Infomorphism: Integrating An Auto decoder-based generative
-                        model maximizing solar accessibility for local energy networks, in <i>the 18th International
-                          IPBSA Conference and Exhibition, Building Simulation 2023</i>, Shanghai, China
-                          [<a href="files/2023 BS Auto Decoder.pdf" target="_blank">Slides</a>]
-                        </li>
-
-                      <li><b>Zhuang X.</b>, Ju Y., Yang, A. and Caldas L. (2023) Synthesis and Generation for 3D
-                        Architecture Volume with Generative Modeling, in <i>International Journal of Architecture
-                          Computing</i>, Vol. 21, Issue 2: AI, Architecture, Accessibility, & Data Justice, doi.10.1177/14780771231168233
-                        [<a href="https://journals.sagepub.com/doi/10.1177/14780771231168233" target="_blank">Paper</a>]
-                      </li>
-
-
-                      <li><b>Zhuang X.</b> (2022) Rendering sketches: Interactive rendering generation from sketches
-                        using conditional
-                        generative adversarial neural network, in <i> 40th Education and research in Computer Aided
-                          Architectural Design in Europe</i>. Ghent, Belgium vol. 1, pp. 517-524. 
-                          [<a href="https://papers.cumincad.org/cgi-bin/works/paper/ecaade2022_273" target="_blank">Paper</a>]
-                      </li>
-
-                      <li><b>Zhuang X.</b> and Caldas L. (2022) Prediction of Ventilation Performance in Urban Area with
-                        CFD Simulation and Conditional Generative Adversarial Networks, in <i>Proceedings of the 5th International
-                           Conference on Building Energy and Environment. COBEE 2022. </i> 
-                           Environmental Science and Engineering. Springer, Singapore. 
-                           doi.10.1007/978-981-19-9822-5_15, pp 129–138 
-                           [<a href="files/2022 COBEE CFD cGAN.pdf" target="_blank">Slides</a>, 
-                           <a href="https://link.springer.com/chapter/10.1007/978-981-19-9822-5_15" target="_blank">Paper</a>]
-                        </li> 
-
-                      <li><b>Zhuang X.</b> and Hanna S. (2020) Space Frame Optimisation with Spectral Clustering, in
-                        <i>International Journal of Machine Learning and Computing</i> vol. 10, no. 4, pp. 507-512. doi. 10.18178/ijmlc.2020.10.4.965
-                        [<a href="http://www.ijmlc.org/index.php?m=content&c=index&a=show&catid=108&id=1137" target="_blank">Paper</a>]
-                      </li>
-                    </ul>
-                  </div>
-
-                </div><!--// .yui-u -->
-              </div><!--// .yui-gf -->
-
-
-              <div class="yui-gf">
-
-                <div class="yui-u first">
-                  <h2>Curated dataset</h2>
-                </div><!--// .yui-u -->
-
-                <div class="yui-u">
-                  <div class="job last">
-                    <ul class="publication">
-
-
-                      <li><b>Zhuang X.</b> (2023) Building Envelopes in New York's CBD: Normalized Signed Distance
-                        Function Representation
-                        <a href="https://zenodo.org/record/8151197"
-                          target="_blank">https://zenodo.org/record/8151197</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div><!--// .yui-u -->
-              </div><!--// .yui-gf -->
-
-
-
-
-              <div class="yui-gf">
-
-                <div class="yui-u first">
-                  <h2>Review committee</h2>
-                </div><!--// .yui-u -->
-
-                <table class="ex1" border="0">
-                  <colgroup>
-                    <col span="1" style="width: 15%;">
-                    <col span="1" style="width: 85%;">
-                  </colgroup>
-                  <tbody>
-
-                    <tr>
-                      <td>From 2023 </td>
-                      <td>Construction Robotics [<a href="https://link.springer.com/journal/41693">Springer link</a>]  </td>
-                    </tr>
-                    <tr>
-                      <td> </td>
-                      <td>Journal of Urban Technology [<a href="https://www.tandfonline.com/journals/cjut20">Taylor & Francis link</a>] </td>
-                    </tr>
-                    <tr>
-                      <td> </td>
-                      <td>Building Simulation: International IBPSA Conference and Exhibition </td>
-                    </tr>
-                    <tr>
-                      <td>From 2021 </td>
-                      <td>The Association for Computer-Aided Architectural Design Research in Asia (CAADRIA)</td>
-                    </tr>
-
-                    <tr>
-                      <td>From 2020 </td>
-                      <td>International Journal of Architectural Computing (IJAC) [<a href="https://journals.sagepub.com/loi/JAC">Sage Journals link</a>] </td>
-                    </tr>
-
-
-
-
-                  </tbody>
-                </table>
-
-              </div><!--// .yui-u -->
-            </div><!--// .yui-gf -->
-
-
-            <div class="yui-gf">
-
-              <div class="yui-u first">
-                <h2>Invited talk</h2>
-              </div><!--// .yui-u -->
-
-              <table class="ex1" border="0">
-                <colgroup>
-                  <col span="1" style="width: 15%;">
-                  <col span="1" style="width: 85%;">
-                </colgroup>
-                <tbody>
-                  <tr>
-                    <td>July 2023</td>
-                    <td>Large model approximation for the urban context based on reinforcement learning with
-                      heterogeneous feedback
-                      <br>Workshop, co-teaching with Zidong Liu from UT Austin, and Jiaxiang Luo from ETH Zürich, at
-                      <i>3rd Computational Art & Tech Workshop on Regional Evolution：Application of AI Technology based
-                        on Regional Culture</i>, jointly organized by Hefei University of Technology and DigitalFUTURES,
-                      China
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td>June 2023</td>
-                    <td>Synthesis and generation for 3D architecture volume: Performance-driven architectural design
-                      with deep learning <br>Invited talk at <i>33th Young Scholar Forum</i>, School of Architecture &
-                      Urban Planning, Nanjing University, China</td>
-                  </tr>
-
-                  <tr>
-                    <td>May 2023</td>
-                    <td>ZNE house case study and machine learning for building morphology analysis. <br>Invited talk at
-                      Center for the Built Environment (CBE), University of California, Berkeley, CA, USA</td>
-                  </tr>
-
-                  <tr>
-                    <td>Oct 2022</td>
-                    <td>Data-driven design: Machine learning, and its application in architecture. <br>
-                      Guest lecture at <i>New York Institute of Technology (NYIT)</i>, NY, USA</td>
-                  </tr>
-                  <!-- 
-                <tr>
-                  <td>July 2022</td>
-                  <td>Computational Architecture: From parametric control to machine learning. <br>
-                    Guest lecture at <i>TGIF Meetup of Chinese Googler Network (CGN)</i>, CA, USA</td>
-                </tr> -->
-
-
-
-
-                </tbody>
-              </table>
-
-            </div><!--// .yui-u -->
-          </div><!--// .yui-gf -->
-
-
-
-
-          <div class="yui-gf">
-            <div class="yui-u first">
-              <h2>Skills</h2>
-            </div>
-            <div class="yui-u">
-              <div class="talent">
-                <h2>Programming</h2>
-                <p>Python, C#, Matlab, C++, Javascript, Processing</p>
-              </div>
-
-              <div class="talent">
-                <h2>Modelling</h2>
-                <p>ArcGIS, Rhinoceros, Grasshopper, Revit, Dynamo, Unity3D, Sketchup, AutoCAD, Blender </p>
-              </div>
-
-              <div class="talent">
-                <h2>Image & video</h2>
-                <p>Photoshop, Illustrator, InDesign, Premiere</p>
-              </div>
-            </div>
-          </div><!--// .yui-gf -->
-
-          <div id="ft">
-            </figure>
-            <a href="https://scholar.google.com/citations?user=Gc7-U6QAAAAJ&hl=en" target="_blank">
-                <img src="image/Google_Scholar_logo.svg.png" height=27 style="vertical-align:middle"></a>
-                <object hspace="3">
-            <a href="https://orcid.org/0000-0003-3518-7488" target="_blank">
-              <img src="image/orcid.logo.icon.svg" height=27 style="vertical-align:middle"></a>
-            <object hspace="2">
-              <a href="https://www.linkedin.com/in/xinwei-zhuang-7568b112a/" target="_blank">
-                <img src="image/linkedin.png" height=30 style="vertical-align:middle"></a>
-              <a href="https://www.instagram.com/xinwei.xz/" target="_blank">
-                <img src="image/ins.png" height=30 style="vertical-align:middle"></a>
-
-              </figure>
-          </div>
-
-        </div><!--// .yui-b -->
-      </div><!--// yui-main -->
-  </div><!--// bd -->
-
-  <!--   <div id="ft">
-      <p>Jonathan Doe &mdash; <a href="mailto:name@yourdomain.com">name@yourdomain.com</a> &mdash; (313) - 867-5309</p>
-    </div>/ footer -->
-
-  </div><!-- // inner -->
-
-
-  </div><!--// doc -->
-
-
-
-
-  </div>
-
-</body>
-
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  My research is centered on machine-learning-aided generative design, 
+                  with a special emphasis on energy efficiency and resilience. 
+                  My recent work concentrates on understanding building stock through 
+                  generative models and modeling urban environments with graph theory.
+                  I am actively seeking collaboration opportunities in these areas.
+                </p>
+                <!-- <p>
+                  Representative papers are <span class="highlight">highlighted</span>.
+                </p> -->
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one" >
+          <!-- <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
+          <source src="images/building_archetype_acadia.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div> -->
+          <img src='images/iccv.png' width=100%>
+        </div>
+        <!-- <script type="text/javascript">
+          function smerf_start() {
+            document.getElementById('smerf_image').style.opacity = "1";
+          }
+
+          function smerf_stop() {
+            document.getElementById('smerf_image').style.opacity = "0";
+          }
+          smerf_stop()
+        </script> -->
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">MARL: Multi-scale Archetype Representation Learning 
+            for Urban Building Energy Modeling</span>
+        
+        <br>
+        <strong>Xinwei Zhuang</strong>*,
+		<a href="https://phogzone.com/">Zixun Huang</a>*,
+		Wentao Zeng,
+		Luisa Caldas,
+        <br>
+        <em>ICCVW</em>, 2023
+        <br>
+        <a href="https://openaccess.thecvf.com/content/ICCV2023W/CVAAD/html/Zhuang_MARL_Multi-scale_Archetype_Representation_Learning_for_Urban_Building_Energy_Modeling_ICCVW_2023_paper.html">
+          project page</a>
+        /
+        <a href="https://xinwei-zhuang.github.io/files/2023%20ICCV%20poster.pdf">poster</a>
+        /
+        <a href="https://github.com/zixunh/MARL-BuildingEnergyEstimation">github</a>
+        <p></p>
+        <p>
+          Refined and open-source release of an automated, geometrically detailed, 
+          localized building archetype generator for energy modeling. 
+          This paper delves into the specifics of an algorithm designed to
+           automatically generate building archetypes tailored to local contexts, 
+           with a focus on detailed geometric resolution for energy modeling purposes. 
+           We provide all codes and data necessary for replication.
+        </p>
+        <p style="font-size:smaller">Zhuang X., Huang Z., Zeng W. and Caldas L. (2023) 
+          MARL: Multi-scale Archetype Representation Learning for Urban Building Energy Modeling, 
+          workshop on Computer Vision Aided Architectural Design (CVAAD), 
+          at International Conference on Computer Vision (ICCV), Paris, France</p>
+      </td>
+    </tr>
+	
+
+    <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <img src='images/building_archetype_acadia.png' width=100%>
+        </div>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+          <span class="papertitle">Encoding Urban Ecologies: Automated Building Archetype Generation 
+            through Self-Supervised Learning for Energy Modeling</span>
+        <br>
+        <strong>Xinwei Zhuang</strong>*, 
+        <a href="https://phogzone.com/">Zixun Huang</a>*,
+        Wentao Zeng,
+        Luisa Caldas,
+        <br>
+        <em>ACADIA</em>, 2023
+        <br>
+        <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
+        /
+        <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+        <p></p>
+        <p>
+          Paper presents a high-level overview of the algorithm behind 
+          the automated generation of localized building archetypes, outlines the algorithm's value proposition and its practical applications.
+        </p>
+        <p style="font-size:smaller">Zhuang X., Huang Z., Zeng W. and Caldas L. (2023) Encoding Urban 
+          Ecologies: Automated Building Archetype Generation through Self-Supervised Learning for Energy 
+          Modeling, in 2023 Conference on Association for Computer Aided Design in Architecture (ACADIA), 
+          Denver, United States of America</p>
+      </td>
+    </tr>
+	
+	
+    <tr onmouseout="recon_stop()" onmouseover="recon_start()" ><!-- bgcolor="#ffffd0"> -->
+    
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <!-- <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/recon.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div> -->
+          <img src='images/3dlearning.png' width="160">
+        </div>
+        <!-- <script type="text/javascript">
+          function recon_start() {
+            document.getElementById('recon_image').style.opacity = "1";
+          }
+
+          function recon_stop() {
+            document.getElementById('recon_image').style.opacity = "0";
+          }
+          recon_stop()
+        </script> -->
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        
+			<span class="papertitle">Synthesis and Generation for 3D Architecture V
+        olume with Generative Modeling</span>
+        
+        <br>
+        <strong>Xinwei Zhuang</strong>*, 
+        <a href="https://scholar.google.com/citations?user=6gx3j9cAAAAJ&hl=en">Yi Ju</a>,
+        <a href="https://people.eecs.berkeley.edu/~yang/">Allen Yang</a>,
+        Luisa Caldas,
+        <br>
+        <em>International Journal of Architecture Computing</em>, 2023
+        <br>
+        <a href="https://journals.sagepub.com/doi/10.1177/14780771231168233">paper</a>
+        <p></p>
+        <p>  Introduces 3D learning in the architectural domain, leveraging generative 
+          models to understand and manipulate the complex morphology of buildings.
+           By constructing an original database specifically tailored for this purpose,
+            the research offers capabilities for high-dimensional design exploration 
+            and energy performance evaluation.   </p>
+            <p style="font-size:smaller">
+            Zhuang X., Ju Y., Yang, A. and Caldas L. (2023) Synthesis and Generation for 
+            3D Architecture Volume with Generative Modeling, in International Journal of 
+            Architecture Computing, Vol. 21, Issue 2: AI, Architecture, Accessibility, & 
+            Data Justice, doi.10.1177/14780771231168233</p>
+      </td>
+    </tr>
+
+
+
+
+          </tbody></table>
+
+<!--           
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+              <td width="75%" valign="center">
+                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
+                <br>
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+                <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <img src="images/cs188.jpg" alt="cs188">
+              </td>
+              <td width="75%" valign="center">
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+                <br>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+                <br>
+                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+              </td>
+            </tr>
+            
+
+            <tr>
+              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+                <h2>Basically <br> Blog Posts</h2>
+              </td>
+              <td width="75%" valign="middle">
+                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+                <br>
+                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+                <br>
+                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+                <br>
+                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+              </td>
+            </tr> -->
+            
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  Design and source code from <a href="https://jonbarron.info/">Jon Barron</a>. 
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
