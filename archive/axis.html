@@ -1,0 +1,253 @@
+    <style>
+      .image-grid {
+        display: grid;
+  grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+        margin-bottom: 2em;
+      }
+        .image-grid img {
+          width: 100%;
+          aspect-ratio: 1 / 1;
+          object-fit: cover;
+          border-radius: 0;
+          transition: box-shadow 0.2s;
+          cursor: pointer;
+        }
+        /* Remove override: restore pointer cursor for all images */
+        .img-subtitle {
+          margin-top: 0.4em;
+          font-size: 0.95em;
+          color: #555;
+          text-align: center;
+        }
+        .img-detail {
+          margin-top: 0.3em;
+          font-size: 0.95em;
+          text-align: center;
+          color: #444;
+        }
+      .image-grid img:hover {
+        box-shadow: 0 0 10px #aaa;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0; top: 0;
+        width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.7);
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-content {
+        background: rgba(255,255,255,0.6);
+        padding: 2em;
+        border-radius: 5px;
+        max-width: 100vh;
+        max-height: 80vh;
+        overflow: auto;
+        text-align: center;
+      }
+      .modal-content img {
+        max-width: 400px;
+        width: 100%;
+        border-radius: 8px;
+      }
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        font-size: 2em;
+        color: #fff;
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      // Gallery modal logic
+      let galleryImages = [];
+      let galleryInfos = [];
+      let currentIndex = 0;
+
+      function openGalleryModal(images, infos, startIndex) {
+        galleryImages = images;
+        galleryInfos = infos;
+        currentIndex = startIndex;
+        updateGalleryModal();
+        document.getElementById('img-modal').style.display = 'flex';
+      }
+
+      function updateGalleryModal() {
+        document.getElementById('modal-img').src = galleryImages[currentIndex];
+        document.getElementById('modal-info').innerHTML = galleryInfos[currentIndex];
+        document.getElementById('gallery-prev').style.visibility = currentIndex > 0 ? 'visible' : 'hidden';
+        document.getElementById('gallery-next').style.visibility = currentIndex < galleryImages.length - 1 ? 'visible' : 'hidden';
+      }
+
+      function galleryPrev() {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateGalleryModal();
+        }
+      }
+      function galleryNext() {
+        if (currentIndex < galleryImages.length - 1) {
+          currentIndex++;
+          updateGalleryModal();
+        }
+      }
+      function closeModal() {
+        document.getElementById('img-modal').style.display = 'none';
+      }
+    </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AXIS Laboratory</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+<body>
+  <div style="max-width:800px;margin:auto;padding:2em;">
+    <!-- Tabs navigation -->
+    <style>
+      .nav-tabs {
+        display: flex;
+        justify-content: center;
+  gap: 0.3em;
+        margin-bottom: 2em;
+      }
+      .nav-tabs a {
+        text-decoration: none;
+        padding: 0.5em 1em;
+        border-radius: 6px;
+        color: #333;
+        border: none;
+        background: none;
+        font-weight: 500;
+        transition: color 0.2s, background 0.2s;
+      }
+      .nav-tabs a:hover {
+        color: #0077cc;
+        background: #f0f0f0;
+        cursor: pointer;
+      }
+    </style>
+    <div class="nav-tabs">
+      <a href="#research">Research</a>
+  <span style="color:#888;align-self:center;">|</span>
+      <a href="#teaching">Teaching</a>
+      <span style="color:#888;font-weight:bold;align-self:center;">|</span>
+      <a href="#exhibition">Exhibition</a>
+      <span style="color:#888;font-weight:bold;align-self:center;">|</span>
+      <a href="#people">People</a>
+    </div>
+
+    <img src="../images/AXIS.png" alt="AXIS Lab Logo" width="35%">
+    <p>Welcome to the Architecture x Intelligent System (A<span style="color:#c62336;">X</span>IS) Laboratory!<br>
+    This lab promotes research, interdisciplinary collaboration, and advanced computational algorithms for both undergraduate and graduate students.</p>
+    
+  <!-- <p>If you are interested to join, please fill out this <a href="https://forms.gle/your-google-form-link" target="_blank">Google Form</a>.</p> -->
+  <p>A<span style="color:#c62336;">X</span>IS is actively recruiting student researchers. For more information, please contact Dr. Xinwei Zhuang.</p>
+
+  <h2 id="research">Research</h2>
+  <div style="height:0.7em;"></div>
+  Details coming soon.<br><br>
+    
+    <!-- <div class="image-grid">
+      <img src="../images/AXIS.png" alt="Project 1" onclick="openModal('../images/AXIS.png', 'Project 1: AI for Architecture<br>Details about project 1...')">
+      <img src="../images/solar_web.png" alt="Project 2" onclick="openModal('../images/solar_web.png', 'Project 2: Solar Simulation<br>Details about project 2...')">
+      <img src="../images/LR.png" alt="Project 3" onclick="openModal('../images/LR.png', 'Project 3: Learning Representation<br>Details about project 3...')">
+    </div> -->
+
+  <h2 id="teaching">Teaching</h2>
+  <div style="height:0.7em;"></div>
+    <div class="image-grid">
+        <div>
+          <img src="../images/teaching/ARCH655 cover.png" alt="Course 1" onclick="openModal('../images/teaching/ARCH655 cover.png', 'Course 1: ARCH 655<br>Advanced Computational Design')">
+          <div class="img-subtitle">ARCH 655</div>
+    <div class="img-detail">Parametric Modeling in Design</div>
+        </div>
+        <div>
+          <img src="../images/teaching/ARCH105 cover.jpg" alt="Course 2" onclick="openModal('../images/teaching/ARCH 105 cover.jpg', 'Course 2: ARCH 105<br>AI in Architecture')">
+          <div class="img-subtitle">ARCH 105</div>
+    <div class="img-detail">Design and Visual Communication Foundation</div>
+        </div>
+    </div>
+
+  <h2 id="exhibition">Exhibition</h2>
+  <div style="height:0.7em;"></div>
+    <div class="image-grid" id="exhibition-grid">
+      <div>
+        <img src="../images/exhibition/lau.JPG" alt="Exhibition" onclick="openExhibitionGallery(0)">
+        <div class="img-subtitle">Lau Just Climate Futures</div>
+      </div>
+    </div>
+    <script>
+      // Exhibition gallery setup
+      function openExhibitionGallery(startIndex) {
+        const images = [
+          '../images/exhibition/lau.JPG',
+          '../images/exhibition/lau2.JPG',
+          '../images/exhibition/lau3.JPG'
+        ];
+        const infos = [
+          'Lau Just Climate Futures',
+          'Lau Just Climate Futures',
+          'Lau Just Climate Futures'
+        ];
+        openGalleryModal(images, infos, startIndex);
+      }
+    </script>
+
+  <h2 id="people">People</h2>
+  <div style="height:0.7em;"></div>
+    <div class="image-grid">
+        <div>
+          <img src="../images/lab_people/xinwei.jpg" alt="Xinwei Zhuang">
+          <div class="img-subtitle">Xinwei Zhuang</div>
+          <div class="img-detail">Lab Director <br> Assistant Professor of Architecture<br> Texas A&M University</div>
+        </div>
+        <div>
+          <img src="../images/lab_people/huying.jpg" alt="Huying (Freya) Tan">
+          <div class="img-subtitle"><a href="https://dusp.mit.edu/people/freya-tan" target="_blank" style="color:#444;text-decoration:underline;">Huying (Freya) Tan</a></div>
+          <div class="img-detail">Lab Affiliate<br>Master of City Planning<br>MIT DUSP</div>
+        </div>
+        <div>
+          <img src="../images/lab_people/zixun.jpg" alt="Zixun Huang">
+          <div class="img-subtitle"><a href="https://www.linkedin.com/in/zixunhuang/" target="_blank" style="color:#444;text-decoration:underline;">Zixun Huang</a></div>
+          <div class="img-detail">Lab Affiliate<br>Research Scientist<br>BOSCH AI Center</div>
+        </div>
+    </div>
+    <!-- Modal for enlarged image and info -->
+    <div id="img-modal" class="modal" onclick="closeModal()">
+      <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" onclick="event.stopPropagation()" style="display:flex;flex-direction:column;align-items:center;">
+          <div style="display:flex;flex-direction:row;align-items:center;justify-content:center;width:100%;">
+            <img id="gallery-prev" onclick="galleryPrev();event.stopPropagation();" src="../images/left.png" alt="Back" style="width:40px;height:40px;opacity:0.5;cursor:pointer;background:none;border:none;margin-right:10px;visibility:hidden;">
+            <img id="modal-img" src="" alt="" style="max-width:400px;width:100%;border-radius:8px;">
+            <img id="gallery-next" onclick="galleryNext();event.stopPropagation();" src="../images/right.png" alt="Next" style="width:40px;height:40px;opacity:0.5;cursor:pointer;background:none;border:none;margin-left:10px;visibility:hidden;">
+          </div>
+          <div id="modal-info" style="margin-top:1em;"></div>
+        </div>
+    </div>
+
+
+    <p><a href="../index.html">Back to Main Page</a></p>
+
+  <button id="backToTopBtn" style="display:none;position:fixed;right:20px;bottom:20px;z-index:999;background:#333;color:#fff;padding:0.6em 1.2em;border:none;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:1em;cursor:pointer;transition:background 0.2s;" onclick="window.scrollTo({top:0,behavior:'smooth'});">Back to Top</button>
+
+    <script>
+      // Back to Top button logic
+      window.addEventListener('scroll', function() {
+        var btn = document.getElementById('backToTopBtn');
+        if (window.scrollY > 120) {
+          btn.style.display = 'block';
+        } else {
+          btn.style.display = 'none';
+        }
+      });
+    </script>
+  </div>
+</body>
+</html>
