@@ -28,9 +28,14 @@
     <h2>Students' Work</h2>
     <p>Below are student photos and their Project 1 thumbnails. Click a project thumbnail to open the student's blog post (opens in a new tab).</p>
     <style>
-      /* Table layout: each of the three columns occupies one-third of the table width */
-      .students-table{width:100%;max-width:1000px;margin:1em auto;border-collapse:collapse;table-layout:fixed}
-      .students-table th,.students-table td{vertical-align:top;padding:0.6em;border-bottom:1px solid #eee;width:33.333%}
+      /* Table layout: fixed layout so column widths are respected */
+      .students-table{width:70%;max-width:1000px;margin:1em auto;border-collapse:collapse;table-layout:fixed}
+      /* Header cells: vertically center the text (first row requirement) */
+      .students-table th{vertical-align:middle;padding:0.6em;border-bottom:1px solid #eee}
+      /* Body cells: keep content aligned to the top */
+      .students-table td{vertical-align:top;padding:0.6em;border-bottom:1px solid #eee}
+      /* Equal-width three columns */
+      .students-table th, .students-table td{width:33.333%}
       /* Student portrait: fixed portrait size 80x120 (w x h) */
       .student-photo{width:80px;height:120px;object-fit:cover;border-radius:6px;display:block;margin:0 auto}
       .student-name{text-align:center;margin-top:0.5em;font-weight:600}
@@ -44,9 +49,9 @@
     <table class="students-table">
       <thead>
         <tr>
-          <th style="text-align:left;width:160px;padding:0.6em 0;border-bottom:2px solid #ddd">Student</th>
-          <th style="text-align:left;width:340px;padding:0.6em 0;border-bottom:2px solid #ddd">Project 1</th>
-          <th style="text-align:left;padding:0.6em 0;border-bottom:2px solid #ddd">Project 2</th>
+          <th style="text-align:center;padding:0.6em 0;border-bottom:2px solid #ddd">Student</th>
+          <th style="text-align:center;padding:0.6em 0;border-bottom:2px solid #ddd">Project 1</th>
+          <th style="text-align:center;padding:0.6em 0;border-bottom:2px solid #ddd">Project 2</th>
         </tr>
       </thead>
       <tbody>
@@ -62,7 +67,10 @@
           <div class="project-note">Direct to student blog</div>
         </td>
         <td>
-          <div>To be updated.</div>
+          <a href="https://minitaz.substack.com/p/project-2-arch-655" target="_blank" rel="noopener noreferrer">
+            <img class="project-thumb" src="arch655/Project2_Travis_Halverson.jpg" alt="Travis — Project 2">
+          </a>
+          <div class="project-note">Direct to student blog</div>
         </td>
       </tr>
       <tr>
@@ -77,7 +85,10 @@
           <div class="project-note">Direct to student blog</div>
         </td>
         <td>
-          <div>To be updated.</div>
+          <a href="https://parametricmodelingzonghanlyu.blogspot.com/2025/12/2025-fall-arch-655-600-parametric.html" target="_blank" rel="noopener noreferrer">
+            <img class="project-thumb" src="arch655/Project2_ZonghanLyu_Thumbnail.png" alt="Zonghan — Project 2">
+          </a>
+          <div class="project-note">Direct to student blog</div>
         </td>
       </tr>
       </tbody>
